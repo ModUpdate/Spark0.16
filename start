@@ -9,8 +9,7 @@ MENU="Note:-
 2)First time user choose 3 For installation..."
 
 OPTIONS=(1 "Pubg Global"
-          2 "Pubg KR"
-          3 "Installation")
+          2 "Pubg KR")
 
 CHOICE=$(dialog --clear \
                 --backtitle "$BACKTITLE" \
@@ -224,85 +223,4 @@ echo ""
 echo "I hope You enjoyed"
         ;;
         
-3)
-
-HEIGHT=15
-HEIGHT=13
-WIDTH=50
-CHOICE_HEIGHT=10
-BACKTITLE=" -------------------Spark VVIP Antiban----------------------------"
-TITLE="By RajeshOP For Pubg Global & KR"
-MENU="Note:-
-1)Choose one of the following options
-2)1 for global 2 for kr."
-
-OPTIONS=(1 "Installation Pubg Global"
-          2 "Installation Pubg KR")
-
-CHOICE=$(dialog --clear \
-                --backtitle "$BACKTITLE" \
-                --title "$TITLE" \
-                --menu "$MENU" \
-                $HEIGHT $WIDTH $CHOICE_HEIGHT \
-                "${OPTIONS[@]}" \
-                2>&1 >/dev/tty)
-
-clear
-case $CHOICE in
-        1)
-echo "  _     _     _     _     _     _     _     _     _  "
-sleep 0.4
-echo " / \   / \   / \   / \   / \   / \   / \   / \   / \ "
-sleep 0.4
-echo "( S ) ( p ) ( a ) ( r ) ( k ) ( V ) ( V ) ( I ) ( P )"
-sleep 0.4
-echo " \_/   \_/   \_/   \_/   \_/   \_/   \_/   \_/   \_/ "
-echo ""
-echo "         [<<<<<<<<<<< For 0.15 >>>>>>>>>>>>>>>]"
-echo "         [<<<<<<<<<<< By RajeshOP >>>>>>>>>>>]"
-
-echo ""
-echo "Installation of Global antiban"
-sleep 1
-echo "-------------25%"
-sleep 1
-echo "-----------------50%"
-sleep 1
-mkdir /data/data/com.termux/files/home/SparkAntiban
-wget -O /data/data/com.termux/files/home/SparkAntiban/lib11 https://github.com/lover3419/temp/blob/master/lib11?raw=true
-echo "---------------------75%"
-sleep 1
-echo "-------------------------100%"
-echo "Installation successful 😁😁😁"
-
-       ;;        
-        
-2)
-echo "  _     _     _     _     _     _     _     _     _  "
-sleep 0.4
-echo " / \   / \   / \   / \   / \   / \   / \   / \   / \ "
-sleep 0.4
-echo "( S ) ( p ) ( a ) ( r ) ( k ) ( V ) ( V ) ( I ) ( P )"
-sleep 0.4
-echo " \_/   \_/   \_/   \_/   \_/   \_/   \_/   \_/   \_/ "
-echo ""
-echo "         [<<<<<<<<<<< For 0.15 >>>>>>>>>>>>>>>]"
-echo "         [<<<<<<<<<<< By RajeshOP >>>>>>>>>>>]"
-
-echo ""
-echo "Installation of KR antiban"
-sleep 1
-echo "-------------25%"
-sleep 1
-echo "-----------------50%"
-sleep 1
-mkdir /data/data/com.termux/files/home/SparkAntiban
-wget -O /data/data/com.termux/files/home/SparkAntiban/lib12 https://github.com/lover3419/temp/blob/master/lib12?raw=true
-echo "---------------------75%"
-sleep 1
-echo "-------------------------100%"
-echo "Installation successful 😁😁😁"
-;;
-esac
-
 esac
