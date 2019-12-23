@@ -118,6 +118,10 @@ done
 printf "\n\n";
 printf "The game is dead \n";
 echo ""
+echo "Clearing Reports "
+rm -rf /data/data/com.tencent.ig
+pm install -r /data/app/com.tencent.ig*/base.apk
+echo "Successful"
 echo ""
 echo "I hope You enjoyed"
       ;;
@@ -219,6 +223,10 @@ done
 printf "\n\n";
 printf "The game is dead \n";
 echo ""
+echo "Clearing Reports "
+rm -rf /data/data/com.pubg.krmobile
+pm install -r /data/app/com.pubg.krmobile*/base.apk
+echo "Successful"
 echo ""
 echo "I hope You enjoyed"
         ;;
