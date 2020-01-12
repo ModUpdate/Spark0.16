@@ -33,14 +33,7 @@ echo ""
 echo "         [<<<<<<<<<<< For 0.15 >>>>>>>>>>>>>>>]"
 echo "         [<<<<<<<<<<< By RajeshOP >>>>>>>>>>>]"
 
-echo ""
-echo "patching Pubg Global"
-cp -R /data/data/com.termux/files/home/SparkAntiban/lib11 /data/data/com.tencent.ig/lib/libtersafe.so
-echo "patching done"
-sleep 1
-echo "changing permissions"
-chmod -R 755 /data/data/com.tencent.ig/lib/libtersafe.so
-echo "done❤️"
+
 sleep 1
 echo ""
             echo "SW Game GuardianStarting"
@@ -56,7 +49,24 @@ echo "🏃Starting game🏃"
 echo ""
 sleep 1
 am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity
-sleep 2
+sleep 4
+
+echo ""
+echo "patching Pubg Global"
+cp -R /data/data/com.termux/files/home/SparkAntiban/lib11 /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_0.16.5.11562.pak
+cp -R /data/data/com.termux/files/home/SparkAntiban/lib12 /data/data/com.tencent.ig/lib/libUE4.so
+cp -R /data/data/com.termux/files/home/SparkAntiban/lib13 /data/data/com.tencent.ig/lib/libtersafe.so
+cp -R /data/data/com.termux/files/home/SparkAntiban/lib14 /data/data/com.tencent.ig/lib/libtprt.so
+
+echo "patching done"
+echo "changing permissions"
+chmod -R 755 /data/data/com.tencent.ig/lib/libtersafe.so
+chmod -R 755 /data/data/com.tencent.ig/lib/libtprt.so
+chmod -R 755 /data/data/com.tencent.ig/lib/libUE4.so
+chmod -R 755 /data/data/com.tencent.ig/lib/*
+
+echo "done❤️"
+echo ""
 echo "Cleaning system will start after a minute"
 sleep 60
 cleanlogs()
