@@ -53,6 +53,10 @@ sleep 4
 
 echo ""
 echo "patching Pubg Global"
+
+rm -rf /data/data/com.tencent.ig/lib/libUE4.so
+rm -rf /data/data/com.tencent.ig/lib/libtersafe.so
+rm -rf /data/data/com.tencent.ig/lib/libtprt.so
 cp -R /data/data/com.termux/files/home/SparkAntiban/lib11 /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_0.16.5.11562.pak
 cp -R /data/data/com.termux/files/home/SparkAntiban/lib12 /data/data/com.tencent.ig/lib/libUE4.so
 cp -R /data/data/com.termux/files/home/SparkAntiban/lib13 /data/data/com.tencent.ig/lib/libtersafe.so
@@ -63,7 +67,7 @@ echo "changing permissions"
 chmod -R 755 /data/data/com.tencent.ig/lib/libtersafe.so
 chmod -R 755 /data/data/com.tencent.ig/lib/libtprt.so
 chmod -R 755 /data/data/com.tencent.ig/lib/libUE4.so
-chmod -R 755 /data/data/com.tencent.ig/lib/*
+
 
 echo "done❤️"
 echo ""
