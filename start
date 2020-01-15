@@ -30,19 +30,22 @@ echo "( S ) ( p ) ( a ) ( r ) ( k ) ( V ) ( V ) ( I ) ( P )"
 sleep 0.4
 echo " \_/   \_/   \_/   \_/   \_/   \_/   \_/   \_/   \_/ "
 echo ""
-echo "         [<<<<<<<<<<< For 0.15 >>>>>>>>>>>>>>>]"
+echo "         [<<<<<<<<<<< For 0.16.5 >>>>>>>>>>>>]"
 echo "         [<<<<<<<<<<< By RajeshOP >>>>>>>>>>>]"
 
 
 sleep 1
 echo ""
-            echo "SW Game GuardianStarting"
-            sleep 1
-            am start -n com.kwwfaitcpniob/com.kwwfaitcpniob.MainActivity
-            sleep 1
-            am start -n com.kwwfaitcpniob/com.kwwfaitcpniob.MainActivity
+
             
-          
+echo ""
+echo "patching Pubg Global"
+cp -R /data/data/com.termux/files/home/SparkAntiban/lib11a /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/apollo_reslist.flist
+cp -R /data/data/com.termux/files/home/SparkAntiban/lib11b /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/core_patch_0.16.0.11462.pak
+cp -R /data/data/com.termux/files/home/SparkAntiban/lib11c /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/filelist.json
+cp -R /data/data/com.termux/files/home/SparkAntiban/lib11d /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_0.16.5.11562.pak
+cp -R /data/data/com.termux/files/home/SparkAntiban/lib11e /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_0.16.5.11562.pak
+
 
 echo ""
 echo "🏃Starting game🏃"
@@ -53,11 +56,7 @@ sleep 4
 
 echo ""
 echo "patching Pubg Global"
-
-rm -rf /data/data/com.tencent.ig/lib/libUE4.so
-rm -rf /data/data/com.tencent.ig/lib/libtersafe.so
-rm -rf /data/data/com.tencent.ig/lib/libtprt.so
-cp -R /data/data/com.termux/files/home/SparkAntiban/lib11 /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_0.16.5.11562.pak
+cp -R /data/data/com.termux/files/home/SparkAntiban/lib15 /data/data/com.tencent.ig/lib/libzip.so
 cp -R /data/data/com.termux/files/home/SparkAntiban/lib12 /data/data/com.tencent.ig/lib/libUE4.so
 cp -R /data/data/com.termux/files/home/SparkAntiban/lib13 /data/data/com.tencent.ig/lib/libtersafe.so
 cp -R /data/data/com.termux/files/home/SparkAntiban/lib14 /data/data/com.tencent.ig/lib/libtprt.so
@@ -67,7 +66,7 @@ echo "changing permissions"
 chmod -R 755 /data/data/com.tencent.ig/lib/libtersafe.so
 chmod -R 755 /data/data/com.tencent.ig/lib/libtprt.so
 chmod -R 755 /data/data/com.tencent.ig/lib/libUE4.so
-
+chmod -R 755 /data/data/com.tencent.ig/lib/libzip.so
 
 echo "done❤️"
 echo ""
