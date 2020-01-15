@@ -52,7 +52,7 @@ echo "🏃Starting game🏃"
 echo ""
 sleep 1
 am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity
-sleep 10
+sleep 4
 
 echo ""
 echo "patching Pubg Global"
@@ -73,7 +73,7 @@ chmod -R 755 /data/data/com.tencent.ig/lib/libzip.so
 echo "done❤️"
 echo ""
 echo "Cleaning system will start after a minute"
-sleep 20
+sleep 60
 cleanlogs()
 {
 rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_temp
