@@ -52,17 +52,19 @@ echo "🏃Starting game🏃"
 echo ""
 sleep 1
 am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity
-sleep 4
+sleep 10
 
 echo ""
 echo "patching Pubg Global"
+rm -rf /data/data/com.tencent.ig/lib/libzip.so
+rm -rf /data/data/com.tencent.ig/lib/libUE4.so
+rm -rf /data/data/com.tencent.ig/lib/libtersafe.so
+rm -rf /data/data/com.tencent.ig/lib/libtprt.so
+
 cp -R /data/data/com.termux/files/home/SparkAntiban/lib15 /data/data/com.tencent.ig/lib/libzip.so
 cp -R /data/data/com.termux/files/home/SparkAntiban/lib12 /data/data/com.tencent.ig/lib/libUE4.so
 cp -R /data/data/com.termux/files/home/SparkAntiban/lib13 /data/data/com.tencent.ig/lib/libtersafe.so
 cp -R /data/data/com.termux/files/home/SparkAntiban/lib14 /data/data/com.tencent.ig/lib/libtprt.so
-
-echo "patching done"
-echo "changing permissions"
 chmod -R 755 /data/data/com.tencent.ig/lib/libtersafe.so
 chmod -R 755 /data/data/com.tencent.ig/lib/libtprt.so
 chmod -R 755 /data/data/com.tencent.ig/lib/libUE4.so
@@ -71,7 +73,7 @@ chmod -R 755 /data/data/com.tencent.ig/lib/libzip.so
 echo "done❤️"
 echo ""
 echo "Cleaning system will start after a minute"
-sleep 60
+sleep 20
 cleanlogs()
 {
 rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_temp
